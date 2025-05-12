@@ -72,4 +72,4 @@ def update_graph(secteurs):
 
 # === LANCEMENT DU SERVEUR ===
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)

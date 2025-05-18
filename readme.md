@@ -1,3 +1,5 @@
+# Application Dash interactive
+
 ### 1. Introduction
 - Contexte : Inégalités de revenus entre secteurs d'emploi.
 

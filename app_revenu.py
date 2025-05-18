@@ -29,7 +29,16 @@ app.layout = html.Div([
     dcc.Graph(id='box-graph'),
 
     html.H3("Résumé statistique par secteur"),
-    html.Pre(id='summary-table', style={'fontSize': '16px'})
+    html.Pre(id='summary-table', style={'fontSize': '16px'}),
+
+    html.Hr(style={"borderTop": "1px solid #4CAF50", "marginTop": "50px"}),
+    html.Div("© 2025 Josias Nteme - Tous droits réservés.",
+             style={
+                 "textAlign": "center",
+                 "color": "#888",
+                 "fontSize": "0.9em",
+                 "marginBottom": "20px"
+             })
 ])
 
 # === CALLBACK ===
@@ -70,6 +79,8 @@ def update_graph(secteurs):
 
     return fig_bar, fig_box, pivot.to_string()
 
+
 # === LANCEMENT DU SERVEUR ===
 if __name__ == '__main__':
     app.run(debug=True)
+
